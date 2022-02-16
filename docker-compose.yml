@@ -19,7 +19,7 @@ services:
       - db
     image: wordpress:latest
     volumes:
-    - "$PWD/src:/var/www/html"
+    - "$PWD/src/wordpress:/var/www/html"
     ports:
       - "8000:80"
     restart: always
@@ -36,5 +36,14 @@ services:
       - db
     ports:
       - 8888:80
+  nuxtjs:
+    image: node:16
+    user: node
+    working_dir: /home/node
+    tty: true
+    ports:
+      - 3333:3000
+    volumes:
+      - "$PWD/src/node:/home/node/for-wp-rest-api"
 volumes:
     db_data:
