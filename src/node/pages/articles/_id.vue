@@ -9,8 +9,8 @@
 <script>
 export default {
   async asyncData(context) {
-    const wpSiteDomain = process.client ? 'localhost:8000' : 'wordpress'
-    console.log(wpSiteDomain)
+    // eslint-disable-next-line no-undef
+    const wpSiteDomain = process.client ? $config.wordpressApiUrl : 'wordpress'
     const post = await context.$axios.$get(`http://${wpSiteDomain}/wp-json/wp/v2/posts/${context.params.id}`)
     // const post = await context.$axios.$get(`http://wordpress/wp-json/wp/v2/posts/${context.params.id}`)
     return { post }
