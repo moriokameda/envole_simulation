@@ -9,7 +9,7 @@ export default {
     titleTemplate: '%s - for-wp-rest-api',
     title: 'for-wp-rest-api',
     htmlAttrs: {
-      lang: 'en',
+      lang: 'ja',
     },
     meta: [
       { charset: 'utf-8' },
