@@ -5,7 +5,7 @@
       <li v-for="post in posts" :key="post.id">
         id: {{ post.id }}<br>
         slug: {{ post.slug }}<br>
-        title: {{ post.title.rendered }}
+        <NuxtLink :to="'/articles/'+post.id">title: {{ post.title.rendered }}</NuxtLink>
       </li>
     </ul>
   </div>
@@ -13,9 +13,9 @@
 
 <script>
 export default {
-  name: "index",
   async asyncData({$axios}) {
-    const posts = await $axios.$get('http://wordpress/wp-json/wp/v2/posts')
+    const wpSiteDomain = process.client ? 'localhost:8000' : 'wordpress'
+    const posts = await $axios.$get(`http://${wpSiteDomain}/wp-json/wp/v2/posts`)
     return { posts }
   }
 }
