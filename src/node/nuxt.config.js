@@ -67,4 +67,8 @@ export default {
   server: {
     host: '0' // デフォルト: localhost
   },
+  // 環境設定
+  privateRuntimeConfig: {
+    wordpressApiUrl: process.env.WORDPRESS_API_URL || 'localhost',
+  }
 }

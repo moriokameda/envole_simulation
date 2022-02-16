@@ -14,7 +14,8 @@
 <script>
 export default {
   async asyncData({$axios}) {
-    const wpSiteDomain = process.client ? 'localhost:8000' : 'wordpress'
+    // eslint-disable-next-line no-undef
+    const wpSiteDomain = process.client ? $config.wordpressApiUrl : 'wordpress'
     const posts = await $axios.$get(`http://${wpSiteDomain}/wp-json/wp/v2/posts`)
     return { posts }
   }
