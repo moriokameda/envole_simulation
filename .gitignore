@@ -29,4 +29,6 @@ src/wp-content/uploads
 
 .idea/
 
+.env
 
+db_data
