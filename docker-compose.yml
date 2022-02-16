@@ -37,7 +37,7 @@ services:
     ports:
       - 8888:80
   nuxtjs:
-    image: node:16-alpine
+    image: node:16
     user: node
     working_dir: /home/node
     tty: true
