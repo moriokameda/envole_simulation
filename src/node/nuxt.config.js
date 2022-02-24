@@ -46,7 +46,7 @@ export default {
   vuetify: {
     customVariables: ['~/assets/variables.scss'],
     theme: {
-      dark: true,
+      dark: false,
       themes: {
         dark: {
           primary: colors.blue.darken2,
@@ -59,6 +59,9 @@ export default {
         },
       },
     },
+    icons: {
+      iconfont: 'md',
+    }
   },
 
   // Build Configuration: https://go.nuxtjs.dev/config-build
@@ -68,7 +71,13 @@ export default {
     host: '0' // デフォルト: localhost
   },
   // 環境設定
-  privateRuntimeConfig: {
+  // privateRuntimeConfig: {
+  //   wordpressApiUrl: process.env.WORDPRESS_API_URL || 'localhost',
+  // },
+  // publicRuntimeConfig: {
+  //   wordpressApiUrl: process.env.WORDPRESS_API_URL || 'localhost',
+  // },
+  env: {
     wordpressApiUrl: process.env.WORDPRESS_API_URL || 'localhost',
   }
 }

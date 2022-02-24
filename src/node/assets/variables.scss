@@ -2,3 +2,31 @@
 //
 // The variables you want to modify
 // $font-size-root: 20px;
+// margin
+.mt-50 {
+  margin-top: 200px !important;
+}
+.mt-60 {
+  margin-top: 240px !important;
+}
+.mt-8rem {
+  margin-top: 8rem !important;
+}
+.mt-10rem {
+  margin-top: 10rem !important;
+}
+.mt-12rem {
+  margin-top: 12.5rem !important;
+}
+.mt-15rem {
+  margin-top: 15rem !important;
+}
+.minus-margin-top-10 {
+  margin-top: -2rem !important;
+}
+
+// font
+.font-size-large {
+  font-family: "Noto Sans CJK JP";
+  font-size: 2rem;
+}

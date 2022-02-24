@@ -15,7 +15,7 @@
 export default {
   async asyncData({$axios}) {
     // eslint-disable-next-line no-undef
-    const wpSiteDomain = process.client ? $config.wordpressApiUrl : 'wordpress'
+    const wpSiteDomain = process.client ? process.env.wordpressApiUrl : 'wordpress'
     const posts = await $axios.$get(`http://${wpSiteDomain}/wp-json/wp/v2/posts`)
     return { posts }
   }
