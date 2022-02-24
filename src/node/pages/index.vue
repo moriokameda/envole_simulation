@@ -80,6 +80,18 @@
 <!--  </v-row>-->
   <div class="main">
     <simulation-top></simulation-top>
+    <v-container class="mt-16">
+      <v-row align="center" justify="center">
+        <v-col>
+          <div class="align-center text-center">
+            <span class="line">\</span><span class="message">あなたにぴったりなものをシミュレーション</span><span class="line">/</span>
+          </div>
+        </v-col>
+      </v-row>
+      <v-row align="center" justify="center" class="mt-5">
+        <h2 class="text-center text-title">シミュレーション</h2>
+      </v-row>
+    </v-container>
   </div>
 </template>
 
@@ -103,5 +115,18 @@ export default {
 .header-carousel .v-carousel__controls {
   justify-content: right;
   right: 10vw !important;
+}
+.message {
+  margin-left: 1rem;
+  margin-right: 1rem;
+  font-size: 1.5em;
+}
+span.line {
+  font-size: 3rem;
+  font-weight: lighter;
+}
+h2.text-title {
+  font-size: 40px;
+  font-family: "Tsukushi A Round Gothic", "Noto sans";
 }
 </style>
