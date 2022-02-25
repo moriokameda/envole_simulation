@@ -2,3 +2,132 @@
 //
 // The variables you want to modify
 // $font-size-root: 20px;
+// margin
+.mt-20 {
+  margin-top: 80px !important;
+}
+.mt-30 {
+  margin-top: 120px !important;
+}
+.mt-40 {
+  margin-top: 160px !important;
+}
+.mt-50 {
+  margin-top: 200px !important;
+}
+.mt-60 {
+  margin-top: 240px !important;
+}
+.mt-8rem {
+  margin-top: 8rem !important;
+}
+.mt-10rem {
+  margin-top: 10rem !important;
+}
+.mt-12rem {
+  margin-top: 12.5rem !important;
+}
+.mt-15rem {
+  margin-top: 15rem !important;
+}
+.minus-margin-top-10 {
+  margin-top: -2rem !important;
+}
+.my-50 {
+  margin-top: 200px !important;
+  margin-bottom: 200px !important;
+}
+
+// font
+.font-size-large {
+  font-size: 2rem;
+}
+.font-1em {
+  font-size: 1em;
+}
+.font-12em {
+  font-size: 1.2em;
+}
+.font-15em {
+  font-size: 1.5em;
+}
+.font-29 {
+  font-size: 29px;
+}
+.font-40 {
+  font-size: 40px;
+}
+.font-noto-sans-cjk {
+  font-family: "Noto Sans CJK JP";
+}
+body {
+  font-family: "Tsukushi A Round Gothic", "Noto sans";
+}
+* {
+  font-family: "Tsukushi A Round Gothic", "Noto sans";
+}
+
+// position
+.position_relative {
+  position: relative;
+}
+.position_absolute {
+  position: absolute;
+}
+
+// size
+.size-large {
+  font-size: 25px;
+  margin-left: 5px;
+  padding-right: 10px;
+  padding-left: 10px;
+  padding-top: 2.5px;
+  padding-bottom: 2.5px;
+  color: #2F6791;
+}
+// color
+.color-blue {
+  color: #2F6791;
+}
+.color-black {
+  color:#0c0c0c;
+}
+.color-dark-blue {
+  color: #2F6791;
+}
+
+//background-color
+.bk-color-light-blue {
+  background-color: #64A1CE;
+}
+.bk-color-green {
+  background-color: #BCD537;
+}
+
+// border
+.border-green {
+  border: 2px #BCD537 solid;
+}
+.border-light-blue {
+  border: 2px #64A1CE solid;
+}
+
+// border-radius
+.border-radius-5 {
+  border-radius: 5%;
+}
+
+// height
+.height-500 {
+  height: 500px;
+}
+
+// carousel
+
+
+// mobile
+@media screen and (max-width: 768px){
+  .mobile-mt-10 {
+    margin-top: 40px;
+  }
+}

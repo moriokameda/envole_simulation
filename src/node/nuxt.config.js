@@ -17,14 +17,23 @@ export default {
       { hid: 'description', name: 'description', content: '' },
       { name: 'format-detection', content: 'telephone=no' },
     ],
-    link: [{ rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' }],
+    link: [
+      { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' },
+      { rel: 'stylesheet', href: 'https://use.fontawesome.com/releases/v5.0.13/css/all.css'}
+    ],
+    script: [
+      { src: 'https://kit.fontawesome.com/9664a027fb.js',crossOrigin: 'anonymous'},
+    ],
   },
 
   // Global CSS: https://go.nuxtjs.dev/config-css
   css: [],
 
   // Plugins to run before rendering page: https://go.nuxtjs.dev/config-plugins
-  plugins: [],
+  plugins: [
+    {src: '~plugins/vue-carousel-3d', ssr: false},
+    {src: '~plugins/wavify', ssr: false},
+  ],
 
   // Auto import components: https://go.nuxtjs.dev/config-components
   components: true,
@@ -46,7 +55,7 @@ export default {
   vuetify: {
     customVariables: ['~/assets/variables.scss'],
     theme: {
-      dark: true,
+      dark: false,
       themes: {
         dark: {
           primary: colors.blue.darken2,
@@ -59,6 +68,9 @@ export default {
         },
       },
     },
+    icons: {
+      iconfont: ['fa','md',],
+    }
   },
 
   // Build Configuration: https://go.nuxtjs.dev/config-build
@@ -68,7 +80,13 @@ export default {
     host: '0' // デフォルト: localhost
   },
   // 環境設定
-  privateRuntimeConfig: {
+  // privateRuntimeConfig: {
+  //   wordpressApiUrl: process.env.WORDPRESS_API_URL || 'localhost',
+  // },
+  // publicRuntimeConfig: {
+  //   wordpressApiUrl: process.env.WORDPRESS_API_URL || 'localhost',
+  // },
+  env: {
     wordpressApiUrl: process.env.WORDPRESS_API_URL || 'localhost',
   }
 }
