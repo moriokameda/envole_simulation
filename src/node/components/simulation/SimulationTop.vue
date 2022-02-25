@@ -5,6 +5,8 @@
       :show-arrows="false"
       hide-delimiter-background
       height="60vh"
+      dark
+      cycle
     >
       <v-carousel-item
         v-for="(item, i) in carouselItems"
@@ -27,7 +29,9 @@
           </v-row>
           <v-row justify="center" align="end" class="">
             <v-col cols="auto">
-              <v-icon class="material-icons" size="9rem" color="#fff">mdi-chevron-down</v-icon>
+              <v-btn href="#whichItem" block depressed icon outlined>
+                <v-icon class="material-icons" size="9rem" color="#fff">mdi-chevron-down</v-icon>
+              </v-btn>
             </v-col>
           </v-row>
         </v-sheet>
@@ -51,8 +55,12 @@ export default {
           src: "/carousel1.jpg"
         },
         {
-          src: "/img.png"
+          src: "/natsuki-xruizGleBVE-unsplash.jpg"
         },
+        {
+          src: "/simulation_top_sea.png"
+        },
+
       ]
     }
   },
@@ -91,7 +99,7 @@ export default {
   letter-spacing: 1em;
 }
 .bottom-height {
-  height: 40%;
+  height: 50%;
 }
 @media screen and (max-width: 768px){
   .header-carousel .carousel-top {

@@ -1,6 +1,6 @@
 <template>
   <v-app-bar color="#B0D0E8" app>
-    <v-row align="center" justify="center">
+    <v-row align="center" justify="center" no-gutters>
       <v-col :cols="2">
         <v-btn to="/" block nuxt color="#fff" text class="mr-2">HOME</v-btn>
       </v-col>
@@ -27,6 +27,8 @@ export default {
 }
 </script>
 
-<style scoped>
-
+<style scoped lang="scss">
+.v-toolbar__content {
+  z-index: 10 !important;
+}
 </style>
