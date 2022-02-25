@@ -17,14 +17,23 @@ export default {
       { hid: 'description', name: 'description', content: '' },
       { name: 'format-detection', content: 'telephone=no' },
     ],
-    link: [{ rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' }],
+    link: [
+      { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' },
+      { rel: 'stylesheet', href: 'https://use.fontawesome.com/releases/v5.0.13/css/all.css'}
+    ],
+    script: [
+      { src: 'https://kit.fontawesome.com/9664a027fb.js',crossOrigin: 'anonymous'},
+    ],
   },
 
   // Global CSS: https://go.nuxtjs.dev/config-css
   css: [],
 
   // Plugins to run before rendering page: https://go.nuxtjs.dev/config-plugins
-  plugins: [],
+  plugins: [
+    {src: '~plugins/vue-carousel-3d', ssr: false},
+    {src: '~plugins/wavify', ssr: false},
+  ],
 
   // Auto import components: https://go.nuxtjs.dev/config-components
   components: true,
@@ -60,7 +69,7 @@ export default {
       },
     },
     icons: {
-      iconfont: 'md',
+      iconfont: ['fa','md',],
     }
   },
 
