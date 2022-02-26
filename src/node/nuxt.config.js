@@ -33,6 +33,7 @@ export default {
   plugins: [
     {src: '~plugins/vue-carousel-3d', ssr: false},
     {src: '~plugins/wavify', ssr: false},
+    '~plugins/vue-scrollto',
   ],
 
   // Auto import components: https://go.nuxtjs.dev/config-components
