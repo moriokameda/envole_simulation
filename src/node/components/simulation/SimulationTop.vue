@@ -29,7 +29,9 @@
           </v-row>
           <v-row justify="center" align="end" class="">
             <v-col cols="auto">
-              <v-btn href="#whichItem" block depressed icon outlined>
+              <v-btn href="#" block depressed icon outlined v-scroll-to="{
+                el: '#whichItem'
+              }">
                 <v-icon class="material-icons" size="9rem" color="#fff">mdi-chevron-down</v-icon>
               </v-btn>
             </v-col>
