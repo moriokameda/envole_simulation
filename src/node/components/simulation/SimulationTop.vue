@@ -128,7 +128,7 @@ export default {
     height: 500px !important;
   }
   .bottom-height {
-    height: 200px;
+    height: 150px;
   }
 
 }

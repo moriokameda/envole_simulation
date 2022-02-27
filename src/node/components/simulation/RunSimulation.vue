@@ -1,7 +1,7 @@
 <template>
   <v-container :id="itemSlug" class="mt-30">
     <v-row align="center" justify="center" class="position_relative">
-      <v-col cols="4" class="position_absolute">
+      <v-col sm="5" md="4" cols="7" class="position_absolute">
         <v-img :src="searchItemIcon" width="100%" position="center center" max-width="100%" contain height="200px"></v-img>
       </v-col>
       <v-col cols="10" class="mt-40">
@@ -189,4 +189,6 @@ export default {
 .theme--light.v-chip {
   border-color: var(--color);
 }
+
+
 </style>

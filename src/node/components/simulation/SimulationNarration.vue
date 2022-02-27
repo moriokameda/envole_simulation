@@ -22,7 +22,7 @@
     </v-row>
     <v-row align="center" no-gutters justify="center" class="mt-20">
       <v-col sm="3" class="position_relative mobile-mt-10" cols="10" align-self="center">
-        <v-img src="/sao.png" class="position_absolute" max-width="150px" height="100px"
+        <v-img src="/sao.png" class="position_absolute" min-width="100px" max-width="150px" height="100px"
                style="left: -4rem;top: -20px; z-index: 2; object-fit: cover"></v-img>
         <v-btn elevation="5" x-large color="#BCD537" class="position_relative pa-8" block href="#" v-scroll-to="{el: '#rod'}">
           <span class="text--white font-weight-bold font-29">竿(ロッド)</span>
@@ -53,6 +53,11 @@ export default {
 }
 </script>
 
-<style scoped>
-
+<style scoped lang="scss">
+@media screen and (max-width: 768px){
+  .text-title {
+    font-size: 2em;
+    font-family: "Tsukushi A Round Gothic";
+  }
+}
 </style>
