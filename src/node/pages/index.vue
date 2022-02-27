@@ -77,15 +77,15 @@ export default {
   right: 10vw !important;
 }
 
+span.line {
+  font-size: 3rem;
+  font-weight: lighter;
+}
+
 .message {
   margin-left: 1rem;
   margin-right: 1rem;
   font-size: 1.5em;
-}
-
-span.line {
-  font-size: 3rem;
-  font-weight: lighter;
 }
 
 h2.text-title {
@@ -106,10 +106,6 @@ h2.text-title {
   background-color: #fff;
 }
 
-.polygon-right-point {
-  clip-path: polygon(0% 0%, 75% 0%, 100% 50%, 75% 100%, 0% 100%);
-}
-
 .theme--light.v-chip {
   border-color: #BCD537;
 }
@@ -117,31 +113,13 @@ h2.text-title {
 .theme--light.v-chip:not(.v-chip--active) {
   background-color: #fff;
 }
-// how to simulation
-.ship_position {
-  top: -5em;
-  right: -15em;
-  z-index: 3;
+@media screen and (max-width: 768px){
+  .message {
+    font-size: 1.2em;
+  }
+  span.line {
+    font-size: 2rem;
+  }
 }
-.fish_position {
-  top: 3rem;
-  right: 2rem;
-}
-.fish_position2 {
-  top: 0;
-  right: 10rem;
-}
-.fish_position3 {
-  top: -1.5rem;
-  right: 1rem;
-}
-.wave {
-  z-index: 1;
-}
-.wave-content {
-  z-index: 5;
-}
-.vue-wavify-wave svg {
-  height: 450px !important;
-}
+
 </style>
