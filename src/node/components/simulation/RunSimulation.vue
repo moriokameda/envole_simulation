@@ -62,8 +62,7 @@
               </v-col>
             </v-row>
           </v-chip-group>
-<!--          <v-btn rounded color="#64A1CE" class="mt-10 font-15em" x-large fab @click="searchRods">検索<br>START</v-btn>-->
-          <v-btn rounded color="#64A1CE" class="mt-15 font-15em" x-large fab @click="searchRods">
+          <v-btn rounded color="#64A1CE" class="mt-15 font-15em" x-large fab @click="searchRods" elevation="20">
             <v-img src="/startSearch.png" contain max-width="200px"></v-img>
           </v-btn>
         </v-form>
@@ -151,7 +150,7 @@ export default {
       ],
       rodType: 0,
       types: [
-        {key: "ペイト", value: 1},
+        {key: "ベイト", value: 1},
         {key: "スピニング", value: 2},
         {key: "分からない", value: 3},
       ],

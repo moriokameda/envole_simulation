@@ -74,19 +74,47 @@ export default {
   top: -5em;
   right: 5em;
   z-index: 5;
+  animation: ship_animation;
+  animation-timing-function: ease-in-out;
+  animation-iteration-count: infinite;
+  //animation-direction: alternate;
+  animation-duration: 3.2s;
 }
 .fish_position {
   top: 3rem;
   right: 2rem;
+  animation: fish_animation;
+  animation-timing-function: ease-in-out;
+  animation-iteration-count: infinite;
+  animation-duration: 5s;
 }
 .fish_position2 {
   top: 0;
   right: 10rem;
+  animation: fish_animation2;
+  animation-timing-function: ease-in-out;
+  animation-iteration-count: infinite;
+  animation-duration: 5s;
 }
 .fish_position3 {
   top: -1.5rem;
   right: 1rem;
 }
+@keyframes ship_animation {
+  0% {top: -5em; right: 5em;}
+  100% {top: 20em; right: 7em; transform: rotate(180deg);}
+}
+@keyframes fish_animation {
+  0% {top: 3rem; right: 2rem;}
+  //50% {top: 5rem; right: -5rem; transform: rotate(-30deg)}
+  100% {top: 20rem; right: -101vw; transform: rotate(-30deg)}
+}
+@keyframes fish_animation2 {
+  0%{top: 0; right: 10rem;}
+  //50% {top: 2rem; right: 15rem;}
+  100% {top: 40rem; right: 101vw;}
+}
+
 @media screen and (max-width: 768px){
   .ship_position {
     right: 0;
